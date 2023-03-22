@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/louis-george-cafe');
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    background-color: rgb(24, 24, 24);
+}
+
+.header{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    justify-content: space-around;
+    background-color: rgb(24,24,24);
+    color: aliceblue;
+    gap:500px;
+}
+
+.hero{
+    background-color: rgb(2, 0, 141);
+    color: aliceblue;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    padding-left: 104px;
+    gap: 24px;
+}
+
+.presentation{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap:32px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 104px;
+}
+
+a{
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    text-decoration-line: none;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+button{
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    height: 120px;
+    width: 600px;
+    border:0px;
+    border-radius: 4px;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Cpp{
+    font-size: 28px;
+}
+.subtext{
+    font-size: 16px;
+    font-weight:normal;
+    color: rgb(255, 255, 255);
+}
