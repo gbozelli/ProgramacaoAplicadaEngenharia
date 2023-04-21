@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="start.css">
-    <title>Variáveis e Operadores</title>
+    <title>Introdução à Programação</title>
 </head>
 <body>
     <div class = header>
@@ -26,33 +26,77 @@
         de instruções que indicam o que o computador deve fazer para gerar um resultado
         esperado. Para escrever um programa, é preciso utilizar uma 
         linguagem de programação. A linguagem faz papel de intermediário entre
-        o computador e o programador, e possui uma sintaxe própria.
+        o computador e o programador, como se fosse uma espécie de "tradutor".
      </div>
      <div class ="Topic">Linguagem de Baixo Nível, Médio e Alto Nível</div>
      <div class="Text">Uma linguagem de baixo nível é a linguagem que o computador entende.
         Por ser uma representação direta de um código da máquina, é muito
         difícil compreendê-la diretamete e, por conta disso, foram criadas
-        as linguagens de médio e alto nível. Uma linguagem de alto nível possui
-        símbolos que são compreendidos por quem escreve o código, mas esses símbolos não
-        podem ser compreendidos pelo computador, por isso precisam de uma espécie de
-        "tradutor", que lê o código oferecido pela linguagem de alto nível e o 
-        traduz em uma linguagem de baixo nível. A linguagem de médio nível seria uma
-        espécie de meio termo entre o baixo nível e o médio nível. É onde está o C.
+        as linguagens de médio e alto nível. Uma linguagem de alto nível consegue ser
+        compreendida por um humano, e também pelo computador, mas esse
+        tipo de linguagem possui uma limitação: para o computador
+        entendê-lá, precisa traduzir um código escrito em alto nível para
+        um código em baixo nível. A linguagem de médio nível seria uma
+        espécie de meio termo entre o baixo nível e o médio nível, ou seja, 
+        ainda é preciso traduzir o código para linguagem de máquina, mas existem
+        elementos de uma linguagem de baixo nível dentro da estrutura 
+        do código. É onde está o C.
      </div>
      <div class ="Topic">O que é 'C'?</div>
-     <div class="Text">C é uma linguagem de programação criada por Ken Thompson. Inicialmente
-        foi desenvolvida para o sistema operacional UNIX, e foi amplamente
-        utilizada durante os anos 80 e 90 em diversas aplicações. Apesar de C, atualmente,
+     <div class="Text">C é uma linguagem de programação criada por Ken Thompson, e, inicialmente
+        foi desenvolvida para o sistema operacional UNIX. Apesar de C, atualmente,
         não ser mais tão popular como antigamente, sua influência em outras linguagens de programação (como C++,
         Java e C#) o tornam essencial para a programação em geral, e suas 
         aplicações em áreas da engenharia, como sistemas embarcados, ainda
         são muito grandes para ser ignorada.
      </div>
      <div class="Text">Por ser uma linguagem de médio nível, um código escrito em C
-        precisa ser convertido em linguagem de máquina para ser executado. Quem faz 
-        esse papel é o compilador. Utilizaremos o OnlineGDB como compilador, por ser
+        precisa ser convertido em linguagem de máquina para ser executado e quem faz 
+        esse papel é o compilador. Inicialmente, não vamos nos preocupar em compreender 
+        esses conceitos de forma profunda, apenas entender o que eles fazem. Nesse curso, utilizaremos o 
+        OnlineGDB como compilador, por ser
         de fácil acesso e extremamente prático.
      </div>
+        <div class="Topic">Lógica de programação</div>
+        <div class = "Text">Lógica de programação é conexão de
+        pensamentos para alcançar um objetivo através de um programa
+        de computador. Os pensamentos são uma sequência de instruções, e as
+        instruções indicam ao computador a sua tarefa.<br>
+        Pensar em lógica de programação nos leva em direção à algoritmos. Algoritmos
+        são uma sequência de passos que realiza uma tarefa, e esses passos devem ser claros e 
+        precisos (como uma receita de bolo). Escrever um programa nada mais é do que 
+        escrever um algoritmo de acordo com a sintaxe da linguagem de programação.<br>
+        Parece complicado, mas vamos fazer um paralelo: receitas.
+        Uma receita de bolo é um algoritmo. Possui uma sequência de instruções que utilizam ingredientes
+        para apresentar um resultado (o bolo).
+        </div>
+        <div class="Topic">Escrevendo algoritmos</div>
+        <div class = "Text">Para escrever um algoritmo, utiliza-se um pseudocódigo. 
+            Pseudocódigos são compostos de instruções genéricas, e são uma espécie de
+            "rascunho" para o programa que será escrito posteriormente, mas não precisam
+            conter os formalismos e regras da linguagem de programação.<br>
+            A escrita do algoritmo é feita pensando-se em três etapas: a entrada, o processamento
+            e a saída. Entrada são os dados que serão enviados ao computador, o processamento
+            é o conjunto de procedimentos para atingir o resultado desejado e a saída são os dados
+            já processados. A seguir, um exemplo básico de algoritmo que calcula a nota média de um aluno:
+        </div>
+        <code>Entrada: P1, P2 e P3 (Notas das provas)<br>
+            Processamento: Média = (P1+P2+P3)/3 (Cálculo da média)<br>
+            Saída: Média</code>
+        <div class="Topic"></div>
+        <div class="Text">Como exemplo, o mesmo código escrito acima, porém em C (Não se preocupe em 
+            compreender o código, é apenas uma demonstração de como a 
+            definição do algoritmo antes da escrita do código facilita a implementação do mesmo): </div>
+        <code>int main(){<br>
+            &nbsp int Nota_P1 = 6;<br>
+            &nbsp int Nota_P2 = 8;<br>
+            &nbsp int Nota_P1 = 7;<br>
+            &nbsp; int Media = (Nota_P1 + Nota_P2 + Nota_P3)/3;<br>
+            &nbsp; printf("&d",Media)<br>
+        }<br>Output: 7</code>
+        <div class="text">Muita teoria, né? No próximo tópico vamos iniciar a programação em C e
+            de fato e compreender seus conceitos, botar a mão na massa.
+        </div>
     </div>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="start.css">
-    <title>Variáveis e Operadores</title>
+    <title>Programando em C</title>
 </head>
 <body>
     <div class = header>
@@ -27,9 +27,28 @@
         &nbsp //declarações<br>
         }</code>
         <div class="Text">Entende-se por conjunto de instruções como pedaços de códigos
-            que possuem funcionalidades de entrada e saída não disponíveis na linguagem
-            nativa do C. Basicamente, vamos importar códigos para realizar determinadas
-            tarefas.
-        </div>
+            que fazem coisas que o C, sozinho, não faz.
+            Basicamente, vamos importar códigos para realizar determinadas tarefas, e essas
+            tarefas vão facilitar nossa escrita do código.<br>
+            A biblioteca básica de C é a <code>stdio.h</code> (do inglês "Standard Input/Output"). Importamos
+            essa biblioteca para usar as funções <code>printf()</code> e <code>scanf()</code>, que são
+            configurações de "entrada" e "saída" (lembre da entrada e saída vista no tópico anterior). Não
+            se preocupe com seu uso e implementação agora, ambas serão explicadas futuramente.<br>
+            O trecho <code>int main()</code> inicialemnte pode parecer bastante confuso. Ele declara uma
+            função (a função executa um conjunto de instruções) <code>int main</code>, de "principal". Essa função é
+            definida dentro da linguagem, e deve ser utilizada para que o código seja executado. Se essa 
+            função não for colocada, o compilador não lê o código, e não há execução.<br>
+            E as declarações? São as instruções da receita de bolo.
+            Posteriormente, veremos que declarações podem ser colocadas fora do escopo da função principal.
+            Por ora, elas serão colocadas aqui dentro, e incluem declarações de variáveis (lembre de variáveis
+            em matemática), estruturas de repetição (loops), condicionais, operadores lógicos, entre outras.
+        <div class="Text">Vamos entender a funcionalidade do seguinte código. Antes, execute-o no através
+            do OnlineGDB:</div>
+        <code>#include &lt;stdio.h&gt;<br>
+            <br>
+            int main(){<br>
+            &nbsp; printf("Estou estudando C!");<br>
+            &nbsp; return 0;<br>
+        }</code>
     </div>
 </body>
