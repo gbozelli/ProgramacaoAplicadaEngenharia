@@ -23,35 +23,37 @@
     <div class ="Topic">Tipos</div>
     <div class = "Text">Variáveis são utilizadas para que o compilador
         utilize a memória e armazene um quantidade específica dessa 
-        memória para uso posterior. No geral, é preciso declarar a variável
-        e atribuir à ela algum valor. Em C, isso é feito da seguinte forma: 
+        memória para uso. No geral, é preciso declarar a variável
+        e atribuir à ela algum valor, assim como fazemos em matemática
+        . Em C, isso é feito da seguinte forma: 
     </div>
     <code>int x = 9;</code>
     <div class = "Text">Primeiramente, é preciso declarar o tipo da variável, para
-        que o computador saiba a quantidade de memória que será alocada.
-        Após a declaração, a variável recebe um nome, geralmente composto por
+        que o computador saiba a quantidade de memória que será alocada, e,
+         após a declaração, a variável recebe um nome, geralmente composto por
         letras do alfabeto. Futuramente, veremos como nomear variáveis de
-        forma eficiente, por enquanto só é necessário saber que elas devem conter
+        forma eficiente, por enquanto é necessário saber que elas devem conter
         somente letras. 
     </div>
     <div class = "Text">Após nomear a variável, é necessário atribuir-lhe valor. 
-        Não necessariamente isso é feito de imediato, ou seja, logo após nomear
-        a variável. Há casos em que ocorre o seguinte:
+        Não necessariamente a atribuição de valor é feita na mesma linha da declaração
+        do tipo da variável. Em casos onde nós queremos descobrir o valor de x, só escrevemos
+        o trecho da seguinte forma:
     </div>
-    <code>int x;
-        <br>x = 9;</code>
+    <code>int x;</code>
     <div class = "Text">De qualquer forma, se há a criação de uma variável, 
-        é porque queremos que ela possua um valor. Essa atribuição é feita 
+        é porque queremos que ela "guarde" alguma coisa, porque
+        eventualmente usaremos essa "coisa". Essa atribuição é feita 
         colocando-se um símbolo de igual, bem semelhante à forma matemática.
-        Vamos verificar se o valor de <code>x</code> é realmente 9:
+        Vamos verificar se o símbolo <code>=</code> fez seu trabalho:
     </div>
     <code>int x = 9;<br>
-        printf("&d",x)<br>Output: 9</code>
+        printf("&d",x);<br>Saída: 9</code>
     <div class="Topic">Tipos de Variáveis</div>
     <div class="Text">Em C existem vários tipos de variáveis, mas nos 
         concentraremos por enquanto somente em dois tipos: <code>int</code> 
         e <code>float</code>. Como vimos acima, o tipo <code>int</code>
-        oferece à variável a característica de número inteiro. Com isso, 
+        oferece à variável a característica de número inteiro, e, com isso, 
         podemos realizar operações matemáticas simples, como soma,
         subtração, multiplicação e divisão.
     </div>

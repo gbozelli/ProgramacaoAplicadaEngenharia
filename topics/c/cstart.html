@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="start.css">
+    <title>Programando em C</title>
+</head>
+<body>
+    <div class = header>
+        <div class = left>Programação Aplicada à Engenharia</div>
+        <div class = right>Sobre</div>
+    </div>
+    <div class = hero>
+        <a href="../c.html"><div class="C">C</a></div>
+        <a><div class="C++">C++</a></div>
+        <a><div class ="POO">Programação Orientada a Objetos</a></div>
+        <a><div class="ADS">Algoritmos e Estrutura de Dados</a></div>
+    </div>
+    <div class="main">
+        <div class="Title">Programando em C</div>
+        <div class="Topic">Estrutura de um programa</div>
+        <div class="Text">Um programa em C, comumente, terá a seguinte estrutura:</div>
+        <code>//conjunto de instruções <br><br>
+        int main(){<br>
+        &nbsp //declarações<br>
+        }</code>
+        <div class="Text">Entende-se por conjunto de instruções como pedaços de códigos
+            que fazem coisas que o C, sozinho, não faz.
+            Basicamente, vamos importar códigos para realizar determinadas tarefas, e essas
+            tarefas vão facilitar nossa escrita do código.</div>
+        <div class="Text">A biblioteca básica de C é a <code>stdio.h</code> (do inglês "Standard Input/Output"). Importamos
+            essa biblioteca para usar as funções <code>printf()</code> e <code>scanf()</code>, que são
+            configurações de "entrada" e "saída" (lembre da entrada e saída vista no tópico anterior). Não
+            se preocupe com seu uso e implementação agora, ambas serão explicadas futuramente.</div>
+        <div class="Text">O trecho <code>int main()</code> inicialmente pode parecer bastante confuso. Ele declara uma
+            função (a função executa um conjunto de instruções) <code>int main</code>, que vem de "principal". Essa função é
+            definida dentro da linguagem, e deve ser utilizada para que o código seja executado. Se essa 
+            função não for colocada, o compilador não lê o código, e não há execução.<br></div>
+            E as declarações? São as instruções da receita de bolo.
+            Posteriormente, veremos que declarações podem ser colocadas fora do escopo da função principal.
+            Por ora, elas serão colocadas aqui dentro, e incluem declarações de variáveis (lembre de variáveis
+            em matemática), estruturas de repetição (loops), condicionais, operadores lógicos, entre outras.
+        <div class="Text">Vamos entender a funcionalidade do seguinte código:</div>
+        <code>#include &lt;stdio.h&gt;<br>
+            <br>
+            int main(){<br>
+            &nbsp; printf("Estou estudando C!");<br>
+            &nbsp; return 0;<br>
+        }</code>
+        <div class="Text">O trecho <code>#include &lt;stdio.h&gt;</code> importa a biblioteca padrão, isso já foi mencionado.
+        Observe que há o uso do <code>#</code> como "comando" para demonstrar ao compilador que 
+        esse é um conjunto a ser importado. Caso o <code>#</code> não seja colocado, o compilador
+        não reconhece o resto do código <code>include &lt;stdio.h&gt;</code>(e provavelmente vai reportar o erro
+        ao programador).</div>
+        <div class="Text">Vamos entender melhor o <code>printf()</code>. Sendo uma das funcionalidades da 
+        biblioteca <code>stdio.h</code>, ela é a saída do nosso programa, nosso resultado,
+        o que nos é retornado. Parece pouco funcional imprimir uma mensagem que nós já estamos
+        escrevendo no programa, mas tente pensar no seguinte: ofereço ao programa uma entrada
+        (mensagem), e ele retorna uma saída (a mesma mensagem).</div>
+        <div class="Text">Por último, a linha <code>return 0;</code>. Essa linha é uma espécie de 
+        convenção adotada pelo compilador para compreender se o programa está rodando de forma correta.
+        Se ele retornar 0, significa que o programa rodou de forma desejada, e se retornar outro
+        número, há algum erro no nosso código. Sempre coloque esse trecho por último na função <code>int main()</code>
+        .</div>
+        <div class="Topic">E agora?</div>
+        <div class="Text">Até o momento, apenas vimos a estrutura do código de uma forma mais livre. Você deve
+            estar pensando "Mas o que significam as <code>{}</code>chaves, <code>;</code>ponto e vírgulas? o que 
+            extamente <code>return</code> faz?". Esses pensamentos de início são muito comuns, porque não 
+            estamos familiarizados com o "pensar" de um computador, com a sua sintaxe rígida, pois
+            pensamos em formas de palavras, imagens, sons, e não em comandos. Eventualmente, com a escrita
+            e prática de códigos, isso será natural.
+        </div>
+        <div class="Text">No próximo tópico, iniciaremos algumas atividades matemáticas em C. 
+            Além de ser uma das principais aplicações da programação, pensar no paralelo entre 
+            computação e matemática é relativamente funcional, visto que a computação surge da 
+            matemática, e tem diversos elementos em comum.
+        </div>
+    </div>
+    <div class="end">
+        <a href="cstart.html" >&lt;&lt;Ant.</a>
+        <a href="varops.html" >Próx.&gt;&gt;</a></div>
+</body>

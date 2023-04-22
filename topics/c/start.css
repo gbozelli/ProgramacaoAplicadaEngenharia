@@ -54,7 +54,6 @@ code{
     line-height: 20px;
     padding-left:4px;
     padding-right:2px;
-    ;
 }
 
 .Text{
@@ -67,4 +66,16 @@ a{
     text-decoration-line: none;
     text-decoration: none;
     color:rgb(255, 255, 255);
+}
+
+.end{
+    background-color: rgb(2, 0, 141);
+    color: rgb(2, 0, 141);
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    padding-left: 104px;
+    gap: 24px;
 }
