@@ -13,31 +13,29 @@
         <div class = right>Sobre</div>
     </div>
     <div class = hero>
-        <a href="../c.html"><div class="C">C</a></div>
-        <a><div class="C++">C++</a></div>
-        <a><div class ="POO">Programação Orientada a Objetos</a></div>
-        <a><div class="ADS">Algoritmos e Estrutura de Dados</a></div>
+        <a href = 'topics\c.html'><div class="C">Introdução à Programação com C</div></a>
     </div>
     <div class="main">
         <div class="Title">Programando em C</div>
         <div class="Topic">Estrutura de um programa</div>
         <div class="Text">Um programa em C, comumente, terá a seguinte estrutura:</div>
-        <code>//conjunto de instruções <br><br>
-        int main(){<br>
-        &nbsp //declarações<br>
-        }</code>
-        <div class="Text">Entende-se por conjunto de instruções como pedaços de códigos
-            que fazem coisas que o C, sozinho, não faz.
+        <code>//declarações globais (bibliotecas) <br><br>
+        int main() //início do programa{<br>
+        &nbsp //instruções<br>
+        } //fim do programa</code>
+        <div class="Text">As bibliotecas são conjuntos de códigos prontos que facilitam (e muito) a vida
+            do programador.
             Basicamente, vamos importar códigos para realizar determinadas tarefas, e essas
-            tarefas vão facilitar nossa escrita do código.</div>
+            tarefas vão auxiliar a nossa escrita do programa.</div>
         <div class="Text">A biblioteca básica de C é a <code>stdio.h</code> (do inglês "Standard Input/Output"). Importamos
             essa biblioteca para usar as funções <code>printf()</code> e <code>scanf()</code>, que são
             configurações de "entrada" e "saída" (lembre da entrada e saída vista no tópico anterior). Não
             se preocupe com seu uso e implementação agora, ambas serão explicadas futuramente.</div>
         <div class="Text">O trecho <code>int main()</code> inicialmente pode parecer bastante confuso. Ele declara uma
-            função (a função executa um conjunto de instruções) <code>int main</code>, que vem de "principal". Essa função é
+            função (a função executa um conjunto de instruções) <code>int main</code>, que é
             definida dentro da linguagem, e deve ser utilizada para que o código seja executado. Se essa 
-            função não for colocada, o compilador não lê o código, e não há execução.<br></div>
+            função não for colocada, o compilador não lê o código, e não há execução. Observe que as chaves "{}"
+            são o que determinam o início e o fim do programa<br></div>
             E as declarações? São as instruções da receita de bolo.
             Posteriormente, veremos que declarações podem ser colocadas fora do escopo da função principal.
             Por ora, elas serão colocadas aqui dentro, e incluem declarações de variáveis (lembre de variáveis
