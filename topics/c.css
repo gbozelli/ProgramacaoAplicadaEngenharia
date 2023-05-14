@@ -33,13 +33,31 @@ body{
     justify-content: center;
     align-items: flex-start;
     padding-left: 104px;
-    
+    gap: 10px;
+}
+
+li{
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.Title{
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 a{
     font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
-    text-decoration: none;
+    text-decoration:none;
     color:rgb(255, 255, 255);
+}
+
+.Text{
+    font-size:16px;
+    margin: 4px;
 }
 
 button{

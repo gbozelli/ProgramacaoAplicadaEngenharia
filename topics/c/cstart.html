@@ -20,7 +20,7 @@
         <div class="Topic">Estrutura de um programa</div>
         <div class="Text">Um programa em C, comumente, terá a seguinte estrutura:</div>
         <code>//declarações globais (bibliotecas) <br><br>
-        int main() //início do programa{<br>
+        int main(){//início do programa<br>
         &nbsp //instruções<br>
         } //fim do programa</code>
         <div class="Text">As bibliotecas são conjuntos de códigos prontos que facilitam (e muito) a vida
@@ -36,10 +36,10 @@
             definida dentro da linguagem, e deve ser utilizada para que o código seja executado. Se essa 
             função não for colocada, o compilador não lê o código, e não há execução. Observe que as chaves "{}"
             são o que determinam o início e o fim do programa<br></div>
-            E as declarações? São as instruções da receita de bolo.
-            Posteriormente, veremos que declarações podem ser colocadas fora do escopo da função principal.
-            Por ora, elas serão colocadas aqui dentro, e incluem declarações de variáveis (lembre de variáveis
-            em matemática), estruturas de repetição (loops), condicionais, operadores lógicos, entre outras.
+            As instruções são o 'algoritmo', o que o nosso programa deve fazer.
+            Posteriormente, veremos que as instruções podem ser colocadas fora do escopo da função principal
+            utilizando 'funções'.
+            Por ora, elas serão colocadas aqui dentro, e incluem o uso de palavras-chave (os comandos da linguagem).
         <div class="Text">Vamos entender a funcionalidade do seguinte código:</div>
         <code>#include &lt;stdio.h&gt;<br>
             <br>
@@ -47,29 +47,42 @@
             &nbsp; printf("Estou estudando C!");<br>
             &nbsp; return 0;<br>
         }</code>
-        <div class="Text">O trecho <code>#include &lt;stdio.h&gt;</code> importa a biblioteca padrão, isso já foi mencionado.
-        Observe que há o uso do <code>#</code> como "comando" para demonstrar ao compilador que 
-        esse é um conjunto a ser importado. Caso o <code>#</code> não seja colocado, o compilador
-        não reconhece o resto do código <code>include &lt;stdio.h&gt;</code>(e provavelmente vai reportar o erro
-        ao programador).</div>
+        <div class="Text">O trecho <code>#include &lt;stdio.h&gt;</code> importa a biblioteca padrão de C.
+        Observe que há o uso do <code>#</code> como comando para demonstrar ao compilador que 
+        essa é uma biblioteca. Caso o <code>#</code> não seja colocado, o compilador
+        provavelmente vai reportar o erro
+        ao programador.</div>
         <div class="Text">Vamos entender melhor o <code>printf()</code>. Sendo uma das funcionalidades da 
-        biblioteca <code>stdio.h</code>, ela é a saída do nosso programa, nosso resultado,
-        o que nos é retornado. Parece pouco funcional imprimir uma mensagem que nós já estamos
-        escrevendo no programa, mas tente pensar no seguinte: ofereço ao programa uma entrada
-        (mensagem), e ele retorna uma saída (a mesma mensagem).</div>
+        biblioteca <code>stdio.h</code>, ela imprime uma mensagem de texto
+        na tela do computador, é a saída do nosso programa. Parece pouco funcional imprimir uma mensagem que nós já estamos
+        escrevendo no programa. O uso de parênteses entre a mensagem serve para demarcar a mensagem que será escrita, e o 
+        ponto e vírgula indica uma quebra de linha, ou seja, que o comando dessa linha já acabaou e o compilador deve seguir 
+        para a próxima.</div>
         <div class="Text">Por último, a linha <code>return 0;</code>. Essa linha é uma espécie de 
         convenção adotada pelo compilador para compreender se o programa está rodando de forma correta.
         Se ele retornar 0, significa que o programa rodou de forma desejada, e se retornar outro
         número, há algum erro no nosso código. Sempre coloque esse trecho por último na função <code>int main()</code>
         .</div>
-        <div class="Topic">E agora?</div>
-        <div class="Text">Até o momento, apenas vimos a estrutura do código de uma forma mais livre. Você deve
-            estar pensando "Mas o que significam as <code>{}</code>chaves, <code>;</code>ponto e vírgulas? o que 
-            extamente <code>return</code> faz?". Esses pensamentos de início são muito comuns, porque não 
-            estamos familiarizados com o "pensar" de um computador, com a sua sintaxe rígida, pois
-            pensamos em formas de palavras, imagens, sons, e não em comandos. Eventualmente, com a escrita
-            e prática de códigos, isso será natural.
+        <div class="Topic">Usando a função "scanf()"</div>
+        <div class="Text">Até o momento, vimos que a mensagem deve ser escrita diretamente no código, mas e se eu
+            quiser assumir uma estrutura mais liberal e "dar" uma mensagem ao programa?. Para isso, existe a função
+            <code>scanf()</code>, que recebe dados digitados no teclado. A configuração <code>scanf()</code> é 
+            a entrada do nosso programa. Vamos analisar o seguinte código:
         </div>
+        <code>#include &lt;stdio.h&gt;<br>
+            <br>
+            int main(){<br>
+            &nbsp; char nome[100];<br>
+            &nbsp; printf("Digite seu nome: ");<br>
+            &nbsp; scanf("%s", nome);<br>
+            &nbsp; printf("Nome: %s", nome);<br>
+            &nbsp; return 0;<br>
+        }</code>
+        <div class="Text">Observe que, para utilizar a função <code>scanf()</code>
+        é preciso acrescentar mais coisas ao código, e muito provavelmente você
+        tenha ficado confuso com alguma linha. Por conta disso o uso do 
+        <code>scanf()</code> será estudado e analisado posteriormente, mas é bom
+        que já se saiba da existência dele. </div>
         <div class="Text">No próximo tópico, iniciaremos algumas atividades matemáticas em C. 
             Além de ser uma das principais aplicações da programação, pensar no paralelo entre 
             computação e matemática é relativamente funcional, visto que a computação surge da 
