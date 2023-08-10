@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="start.css">
-    <title>VControles e Condição</title>
+    <title>Controles de Condição</title>
 </head>
 <body>
     <div class = header>
@@ -15,9 +15,78 @@
     <div class = hero>
         <a href="../c.html"><div class="C">C</a></div>
         <a><div class="C++">C++</a></div>
-        <a><div class ="POO">Programação Orientada a Objetos</a></div>
-        <a><div class="ADS">Algoritmos e Estrutura de Dados</a></div>
     </div>
     <div class="main">
+      <div class ="Title">Controles de Condição</div>
+      <div class ="Topic">Tomada de decisão</div>
+      <div class = "Text">Ao resolver um problema, você
+        se depara com diversas condições. Se essas condições forem verdadeiras ou não,
+        o resultado do seu problema se altera, como se houvesse uma espécie de 
+        dependência entre a condição e o resultado. Vamos supor que você precisa
+        separar, legalmente, adultos de não adultos, e, pela Constituição Federal,
+        uma pessoa deve ter mais de 18 anos para ser considerada como um adulto.
+    </div>
+    <div class = "Text">Nesse exemplo, a condição é a pessoa ter mais de 18
+      anos para ser adulta, e nossos resultados são dois: a pessoa ser ou não ser,
+      ou seja, nosso resultado ser falso or verdadeiro. Vamos tentar traduzir isso
+      em um pseudocódigo:
+      <code>
+        Idade = 19
+        Se Idade > 18,
+          é maior de Idade
+        Se não, 
+          é menor
+      </code> 
+      <div class = "Text">Agora, vamos tentar aplicar isso usando as ferramentas de C</div>
+      <div class ="Topic">Comandos 'if' e 'else'</div>
+      <div class = "Text">Na tradução livre, 'if' e 'else' significam, respectivamente,
+        'se' e 'se não'. Tem a seguinte estrutura:
+      </div>
+      <code>if (condição) {<br>
+        // instruções<br>
+      } // fim da condição<br></code>
+      <div class = "Text">A estrutura nos diz que se a condição for
+        verdadeira, todas as linhas de código delimitada pelas chaves serão lidas.
+        Do contrário, o compilador simplesemente vai pular as instruções das chaves,
+        e nada vai ser processado. Podemos incrementar o 'if' utilizando o 'else',
+        que será lido quando a condição do 'if' for falsa:</div>
+        <code>if (condição) {<br>
+          // instruções<br>
+        } else { //negação da condição <br>
+          //instruções
+        }<br></code>
+        <div class = "Text">Podemos também utilizar vários <code>if</code> quando
+        temos mais de uma condição a ser testada, utilizando o camando
+        <code>else if</code>:</div>
+        <code>if (condição 1) {<br>
+          // instruções<br>
+        } else if (condição 2) {  <br>
+          //instruções
+        }.<br>
+        .<br>
+        .<br>
+      } else if (condição n) {  <br>
+        //instruções
+      }</code>
+      <div class = "Text">Vamos implementar o nosso exemplo, agora usando C:</div>
+      <code>int idade = 19;<br>
+        if (idade > 18) {<br>
+        printf("É maior de idade");<br>
+      } else {  <br>
+        printf("Não é maior de idade");
+      }<br></code>
+      <div class ="Topic">Operadores lógicos e relacionais</div>
+      <code>
+        <div class = "Text">Relacionais</div>
+        <br>Maior: >
+        <br>Menor: <
+        <br>Igual: ==
+        <br>Menor e igual: <=
+        <br>Maior e igual: >=
+        <div class = "Text">Lógicos</div>
+        <br>E: &&
+        <br>Ou: ||
+      </code>
+    </div>
     </div>
 </body>
