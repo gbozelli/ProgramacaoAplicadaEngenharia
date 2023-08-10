@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="start.css">
+    <title>Vetores e Matrizes</title>
+</head>
+<body>
+    <div class = header>
+        <div class = left>Programação Aplicada à Engenharia</div>
+        <div class = right>Sobre</div>
+    </div>
+    <div class = hero>
+        <a href="../c.html"><div class="C">C</a></div>
+        <a><div class="C++">C++</a></div>
+        <a><div class ="POO">Programação Orientada a Objetos</a></div>
+        <a><div class="ADS">Algoritmos e Estrutura de Dados</a></div>
+    </div>
+    <div class="main">
+      <div class="Title">Vetores e Matrizes</div>
+        <div class="Topic">Armazenando valores</div>
+        <div class="Text">Até agora, armazenamos valores utilizando variáveis,
+          o que é completamente comum e aceitável em contextos mais práticos,
+          como armazenar o raio de uma circunferência, a idade de uma pessoa, entre outras.
+          Mas e se tivessemos que amrmazenar 100 valores distintos? Criaríamos
+          100 variáveis? Isso seria pouco prático e poderia deixar nosso programa
+          mais confuso. Para isso, usamos vetores:
+          <code>int vetor[tamanho] = {itens};</code>
+          <div class="Title">Um vetor possui: tipo de dado a ser armazenado (
+          como <code>int</code> ou <code>float</code>), tamanho (quantidade de
+          'variávies') e os itens (valor de cada variável). Vejamos um exemplo:
+          </div>
+          <code>
+          //Usando vetores:<br>
+          int vetor[3] = {1,2,3};<br>
+          //Usando variáveis:<br>
+          int x = 1;<br>
+          int y = 2;<br>
+          int z = 3;<br>
+          </code>
+          <div class="Text">Utilizar vetores acaba sendo mais fácil e prático
+            do que usar variáveis, mas a principal vantagem está na manipulação.
+            Aqui o nível de dificuldade crescerá um pouco, pois utilizaremos loops com
+            vetores para demonstrar como essa ferramenta é poderosa, já
+            que os vetores nos introduzem a noção de estrutura de dados.
+            Vamos supor que você quer armazenar os números de 1 a 9 em um programa, e
+            existem duas maneiras de fazer isso:
+          </div>
+          <code>
+            //Usando variáveis:<br>
+            int a = 1;<br>
+            int b = 2;<br>
+            int c = 3;<br>
+            int d = 4;<br>
+            int e = 5;<br>
+            int f = 6;<br>
+            int g = 7;<br>
+            int h = 8;<br>
+            int i = 9;<br>
+            //Usando vetores:<br>
+            int vetor[9];
+            for (int i = 0; i < 9 ;i += 1)<br>
+              vetor[i] = i+1;
+            </code>
+            <div class="Text">Quando um vetor está sendo utilizado, é preciso
+              chamar a posição que se deseja do vetor para acessar seu valor. No 
+              exemplo acima, cada índice do vetor recebeu um valor próprio, que 
+              é o seu próprio índice somado com uma unidade. O que fizemos aqui
+              com loops foi, basicamente, percorrer um vetor, ou seja, o loop
+              é a forma básica de percorrer um vetor por completo.
+            </div>
+            <div class="Topic">Matrizes</div>
+            <code>
+              <br>
+              int matriz[m][n];
+              </code>
+        <div class="Text">Matrizes são uma 'coleção' de vetores, com duas dimensões.
+          Para percorrer uma matriz, usamos dois loops: um para as linhas e o outro
+          para as colunas:
+        </div>
+        <code>
+          //imprimindo os valores de uma matriz
+          for (int i = 0; i < m; i += 1)
+            for (int j = 0; i < n; i += 1)
+              printf("%d",matriz[i][j]);
+        </code>
+        </div>
+        <div class="end">
+          <a href="loops.html" >&lt;&lt;Ant.</a>
+    </div>
+</body>
