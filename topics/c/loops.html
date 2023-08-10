@@ -19,8 +19,51 @@
         <a><div class="ADS">Algoritmos e Estrutura de Dados</a></div>
     </div>
     <div class="main">
+    <div class="Title">Estruturas de repetição</div>
+    <div class="Topic">Comandos while e for</div>
+    <div class="Text">Muitas vezes nos vemos programando linhas e linhas, as quais, muitas vezes
+    poderiam ser simplificadas em linhas de código menores, como por exemplo, quando queremos imprimir 
+    números de 0 a 9. Da seguinte forma:
     </div>
-    <div class="end">
-        <a href="conds.html" >&lt;&lt;Ant.</a>
-        <a href="vectors.html" >Próx.&gt;&gt;</a></div>
+    <code>printf("0");<br>
+        printf("1");<br>
+        printf("2");<br>
+        printf("3");<br>
+        printf("4");<br>
+        printf("5");<br>
+        printf("6");<br>
+        printf("7");<br>
+        printf("8");<br>
+        printf("9");<br>
+    </code>
+    <div class="Text">Está claro que perderíamos muito tempo e linhas repetindo os comandos, desse modo, 
+    podemos utilizar uma estrutura de repetição para simplificar nossos códigos. Nesta seção, abordaremos as duas 
+    principais, <code>while</code> e <code>for</code>.
+    </div>
+    <div class="Topic">Comando while</div>
+    <div class="Text">A estrutura while é executada sob uma condição, e enquanto ela não for atendida o código
+    continuará executando o laço de repetição.
+    </div>
+    <code>int x = 0;<br>
+        while(x < 10){ #Condição<br> 
+            printf("\n%d", x);<br>
+            x++; #Soma um valor a x a cada vez que o laço é executado, equivale a x = x + 1<br> 
+        }<br><br>
+        Saída:<br>
+               <br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>
+    </code>
+    <div class="Topic">Comando for</div>
+    <div class="Text">Diferente do <code>while</code>, no <code>for</code> é possível adicionar
+    mais condições e podemos criar uma variável temporária, da seguinte forma:
+    </div>
+    <code>for(int i = 0; i < 10; i++){<br>
+        printf("%d", i);<br>
+        }<br><br>
+        Saída:<br>
+                <br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>
+    </code>
+    </div>
+    </div>
+    </div>
 </body>
+</html>
