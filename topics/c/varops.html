@@ -20,7 +20,7 @@
     </div>
     <div class="main">
     <div class ="Title">Variáveis e Operadores</div>
-    <div class ="Topic">Tipos</div>
+    <div class ="Topic">Variáveis</div>
     <div class = "Text">Variáveis são utilizadas para que o compilador
         utilize a memória e armazene um quantidade específica dessa 
         memória para uso. No geral, é preciso declarar a variável
@@ -48,8 +48,8 @@
         Vamos verificar se o símbolo <code>=</code> fez seu trabalho:
     </div>
     <code>int x = 9;<br>
-        printf("&d",x);<br>Saída: 9</code>
-    <div class="Topic">Tipos de Variáveis</div>
+        printf("%d",x);<br>Saída: 9</code>
+    <div class="Topic">Tipos de variáveis</div>
     <div class="Text">Em C existem vários tipos de variáveis, mas nos 
         concentraremos por enquanto somente em dois tipos: <code>int</code> 
         e <code>float</code>. Como vimos acima, o tipo <code>int</code>
@@ -59,7 +59,59 @@
     </div>
     <div class = "Text">O tipo <code>float</code> é bem semelhante
     ao tipo <code>int</code>, com 2 diferenças primordiais: espaço 
-    ocupado na memória e uso em operações matemáticas.  
+    ocupado na memória e uso em operações matemáticas. Sobre a memória, o assunto será
+    abordado com mais detalhes em tópicos mais avançados. Já sobre as operações matemáticas, 
+    o seu uso é recorrente em situações nas quais precisamos representar números decimais, como
+    por exemplo, em operações financeiras, representações de números não naturais, etc.
+    </div>
+    <div class = "Text"> Declaramos a variável <code>float</code> da mesma forma que declaramos
+    a variável <code>int</code>:
+    </div>
+    <code>float x = 9;<br>
+        printf("%d",x);<br>Saída: 9.0</code>
+    <div class="Topic">Operadores</div>
+    <div class="Text">Conhecendo as variáveis e sabendo utilizá-las, podemos partir para a 
+    manipulação das mesmas, sendo possível realizar operações matemáticas fundamentais, tais como 
+    adição, subtração, divisão e multiplicação.</div>
+    <code>int x = 1;<br>int y = 2;<br>int z = 0;<br>
+        <br>z = x + y; #Adição<br>
+        printf("%d", z);<br>
+        Saída: 3<br>
+        <br>z = x - y; #Subtração<br>
+        printf("%d", z);<br>
+        Saída: -1<br>
+        <br>z = x * y; #Multiplicação<br>
+        printf("%d", z);<br>
+        Saída: 2<br>
+        <br>z = x / y; #Divisão<br>
+        printf("%d", z);<br>
+        Saída: 0<br>
+    </code>
+    <div class="Text">Note que na divisão, o resultado impresso foi 0, apesar de sabermos que o resultado correto
+    é 0,5, a linguagem interpretou a operação entre dois inteiros e retornou um valor inteiro, no caso o 0. Para este
+    caso e outros, que envolvam maior precisão, o uso da variável float é recomendável. Assim, teríamos o seguinte: 
+    </div>
+    <code>float x = 1;<br>float y = 2;<br>float z = 0;<br>
+        <br>z = x + y; #Adição<br>
+        printf("%f", z);<br>
+        Saída: 3.0<br>
+        <br>z = x - y; #Subtração<br>
+        printf("%f", z);<br>
+        Saída: -1.0<br>
+        <br>z = x * y; #Multiplicação<br>
+        printf("%f", z);<br>
+        Saída: 2.0<br>
+        <br>z = x / y; #Divisão<br>
+        printf("%f", z);<br>
+        Saída: 0.5<br>
+    </code>
+    <div class="Text">Atente-se à sintaxe. Para variáveis do tipo <code>int</code> imprimimos/chamamos utilizando
+    "%d" ou "%i", e para variáveis do tipo <code>float</code> utilizamos "%f". Caso queira representar as duas primeiras casas
+    decimais, utilize "%.2f", caso queira as três "%.3f", e assim por diante.
+    </div>
+
+    </div>
+    </div>
     </div>
     </div>
 </body>
