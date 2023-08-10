@@ -22,19 +22,22 @@
     <div class="Title">Estruturas de repetição</div>
     <div class="Topic">Comandos while e for</div>
     <div class="Text">Muitas vezes nos vemos programando linhas e linhas, as quais, muitas vezes
-    podem ser simplificadas em linhas de código menores, como por exemplo, quando queremos utilizar solicitar
-    valores para o usuário, mas não queremos repetir o código. Da seguinte forma:
+    poderiam ser simplificadas em linhas de código menores, como por exemplo, quando queremos imprimir 
+    números de 0 a 9. Da seguinte forma:
     </div>
-    <code>printf("Digite dez números: ");<br>
-        int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10 = 0;<br>
-        printf("1o valor: ");<br>
-        scanf("%i", &n1);<br>
-        printf("2o valor: ");<br>
-        scanf("%i", &n2);<br>
-        ...
+    <code>printf("0");<br>
+        printf("1");<br>
+        printf("2");<br>
+        printf("3");<br>
+        printf("4");<br>
+        printf("5");<br>
+        printf("6");<br>
+        printf("7");<br>
+        printf("8");<br>
+        printf("9");<br>
     </code>
-    <div class="Text">Logo, percebemos que perderíamos muito tempo e linhas repetindo os comandos para cada entrada e saída.
-    Desse modo, podemos utilizar uma estrutura de repetição para simplificar nossos códigos. Nesta seção, abordaremos as duas 
+    <div class="Text">Está claro que perderíamos muito tempo e linhas repetindo os comandos, desse modo, 
+    podemos utilizar uma estrutura de repetição para simplificar nossos códigos. Nesta seção, abordaremos as duas 
     principais, <code>while</code> e <code>for</code>.
     </div>
     <div class="Topic">Comando while</div>
@@ -44,12 +47,21 @@
     <code>int x = 0;<br>
         while(x < 10){ #Condição<br> 
             printf("\n%d", x);<br>
-            x++;<br>
+            x++; #Soma um valor a x a cada vez que o laço é executado, equivale a x = x + 1<br> 
         }<br><br>
         Saída:<br>
                <br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>
     </code>
-
+    <div class="Topic">Comando for</div>
+    <div class="Text">Diferente do <code>while</code>, no <code>for</code> é possível adicionar
+    mais condições e podemos criar uma variável temporária, da seguinte forma:
+    </div>
+    <code>for(int i = 0; i < 10; i++){<br>
+        printf("%d", i);<br>
+        }<br><br>
+        Saída:<br>
+                <br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>
+    </code>
     </div>
     </div>
     </div>
