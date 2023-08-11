@@ -13,10 +13,7 @@
         <div class = right>Sobre</div>
     </div>
     <div class = hero>
-        <a href="../c.html"><div class="C">C</a></div>
-        <a><div class="C++">C++</a></div>
-        <a><div class ="POO">Programação Orientada a Objetos</a></div>
-        <a><div class="ADS">Algoritmos e Estrutura de Dados</a></div>
+      <a href = 'topics\c.html'><div class="C">Introdução à Programação com C</div></a>
     </div>
     <div class="main">
       <div class="Title">Vetores e Matrizes</div>
@@ -26,9 +23,9 @@
           como armazenar o raio de uma circunferência, a idade de uma pessoa, entre outras.
           Mas e se tivessemos que amrmazenar 100 valores distintos? Criaríamos
           100 variáveis? Isso seria pouco prático e poderia deixar nosso programa
-          mais confuso. Para isso, usamos vetores:
+          mais confuso. Para isso, usamos vetores:</div>
           <code>int vetor[tamanho] = {itens};</code>
-          <div class="Title">Um vetor possui: tipo de dado a ser armazenado (
+          <div class="Text">Um vetor possui: tipo de dado a ser armazenado (
           como <code>int</code> ou <code>float</code>), tamanho (quantidade de
           'variávies') e os itens (valor de cada variável). Vejamos um exemplo:
           </div>
@@ -62,7 +59,7 @@
             //Usando vetores:<br>
             int vetor[9];
             for (int i = 0; i < 9 ;i += 1)<br>
-              vetor[i] = i+1;
+            &nbsp;  vetor[i] = i+1;
             </code>
             <div class="Text">Quando um vetor está sendo utilizado, é preciso
               chamar a posição que se deseja do vetor para acessar seu valor. No 
@@ -72,8 +69,8 @@
               é a forma básica de percorrer um vetor por completo.
             </div>
             <div class="Topic">Matrizes</div>
+            <div class="Text">Declaração de uma matriz de valores inteiros com 'm' linhas e 'n' colunas:</div>
             <code>
-              <br>
               int matriz[m][n];
               </code>
         <div class="Text">Matrizes são uma 'coleção' de vetores, com duas dimensões.
@@ -81,10 +78,14 @@
           para as colunas:
         </div>
         <code>
-          //imprimindo os valores de uma matriz
-          for (int i = 0; i < m; i += 1)
-            for (int j = 0; i < n; i += 1)
-              printf("%d",matriz[i][j]);
+          //criando uma matriz nula
+          for (int i = 0; i < m; i += 1)<br>
+          &nbsp;for (int j = 0; i < n; i += 1)<br>
+          &nbsp;&nbsp;matriz[i][j] = 0;<br>
+          //imprimindo os valores de uma matriz<br>
+          for (int i = 0; i < m; i += 1)<br>
+          &nbsp;for (int j = 0; i < n; i += 1)<br>
+          &nbsp;&nbsp;printf("%d",matriz[i][j]);<br>
         </code>
         </div>
         <div class="end">

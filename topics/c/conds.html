@@ -13,8 +13,7 @@
         <div class = right>Sobre</div>
     </div>
     <div class = hero>
-        <a href="../c.html"><div class="C">C</a></div>
-        <a><div class="C++">C++</a></div>
+      <a href = 'topics\c.html'><div class="C">Introdução à Programação com C</div></a>
     </div>
     <div class="main">
       <div class ="Title">Controles de Condição</div>
@@ -29,13 +28,13 @@
     <div class = "Text">Nesse exemplo, a condição é a pessoa ter mais de 18
       anos para ser adulta, e nossos resultados são dois: a pessoa ser ou não ser,
       ou seja, nosso resultado ser falso or verdadeiro. Vamos tentar traduzir isso
-      em um pseudocódigo:
+      em um pseudocódigo:</div>
       <code>
-        Idade = 19
-        Se Idade > 18,
-          é maior de Idade
-        Se não, 
-          é menor
+        Idade = 19<br>
+        Se Idade > 18,<br>
+        &nbsp;  é maior de Idade<br>
+        Se não, <br>
+        &nbsp;  é menor<br>
       </code> 
       <div class = "Text">Agora, vamos tentar aplicar isso usando as ferramentas de C</div>
       <div class ="Topic">Comandos 'if' e 'else'</div>
@@ -43,7 +42,7 @@
         'se' e 'se não'. Tem a seguinte estrutura:
       </div>
       <code>if (condição) {<br>
-        // instruções<br>
+        &nbsp; // instruções<br>
       } // fim da condição<br></code>
       <div class = "Text">A estrutura nos diz que se a condição for
         verdadeira, todas as linhas de código delimitada pelas chaves serão lidas.
@@ -51,9 +50,9 @@
         e nada vai ser processado. Podemos incrementar o 'if' utilizando o 'else',
         que será lido quando a condição do 'if' for falsa:</div>
         <code>if (condição) {<br>
-          // instruções<br>
+          &nbsp; // instruções<br>
         } else { //negação da condição <br>
-          //instruções
+          &nbsp; //instruções
         }<br></code>
         <div class = "Text">Podemos também utilizar vários <code>if</code> quando
         temos mais de uma condição a ser testada, utilizando o camando
@@ -66,24 +65,50 @@
         .<br>
         .<br>
       } else if (condição n) {  <br>
-        //instruções
+        &nbsp; //instruções
       }</code>
       <div class = "Text">Vamos implementar o nosso exemplo, agora usando C:</div>
       <code>int idade = 19;<br>
         if (idade > 18) {<br>
-        printf("É maior de idade");<br>
+          &nbsp; printf("É maior de idade");<br>
       } else {  <br>
-        printf("Não é maior de idade");
-      }<br></code>
+        &nbsp; printf("Não é maior de idade");<br>
+      }</code>
       <div class ="Topic">Operadores lógicos e relacionais</div>
+      <div class = "Text">Para relacionar duas variáveis, usamos operadores relacionais.
+        Isso quer dizer que a condição a ser analisada na nossa tomada de decisão é a relação entre
+        valores, e se essa relação é verdadeira ou não. Vamos observar alguns operadores relacionais:
+      </div>
       <code>
-        <div class = "Text">Relacionais</div>
-        <br>Maior: >
+        Maior: >
         <br>Menor: <
         <br>Igual: ==
         <br>Menor e igual: <=
         <br>Maior e igual: >=
-        <div class = "Text">Lógicos</div>
+      </code>
+
+      <div class = "Text">Utilizamos operadores lógicos para juntar condições ou invertê-las, ou seja, teremos uma 
+        ou mais condições que formarão outra. Por exemplo:
+        <code>
+          Idade = 19<br>
+          Se Idade > 18 E Idade < 60,<br>
+          &nbsp; é adulto<br>
+          
+        </code> 
+        <div class = "Text">Nesse caso, <code>Idade > 18</code> e <code>Idade < 60</code> são duas condições
+        unidas em uma só pelo operador lógico <code>E</code>, se tornando uma só condição
+        <code>Idade > 18 E Idade < 60</code>. Outro exemplo: </div>
+        <code>
+          Idade = 19<br>
+          Se NÃO Idade > 18,<br>
+          &nbsp; é criança<br>
+          
+        </code> 
+        <div class = "Text">O operador <code>NÃO</code> inverte nossa condição, tornando, nesse exemplo, a condição
+          <code>Idade > 18</code> igual à <code>Idade <= 18 </code>.</div>
+      </div>
+      <code>
+        Não: !!
         <br>E: &&
         <br>Ou: ||
       </code>

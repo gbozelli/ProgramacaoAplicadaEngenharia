@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="start.css">
-    <title>Variáveis e Operadores</title>
+    <title>Estruturas de Repetição</title>
 </head>
 <body>
     <div class = header>
@@ -13,14 +13,11 @@
         <div class = right>Sobre</div>
     </div>
     <div class = hero>
-        <a href="../c.html"><div class="C">C</a></div>
-        <a><div class="C++">C++</a></div>
-        <a><div class ="POO">Programação Orientada a Objetos</a></div>
-        <a><div class="ADS">Algoritmos e Estrutura de Dados</a></div>
+        <a href = 'topics\c.html'><div class="C">Introdução à Programação com C</div></a>
     </div>
     <div class="main">
-    <div class="Title">Estruturas de repetição</div>
-    <div class="Topic">Comandos while e for</div>
+    <div class="Title">Estruturas de Repetição</div>
+    <div class="Topic">Comandos "while" e "for"</div>
     <div class="Text">Muitas vezes nos vemos programando linhas e linhas, as quais, muitas vezes
     poderiam ser simplificadas em linhas de código menores, como por exemplo, quando queremos imprimir 
     números de 0 a 9. Da seguinte forma:
@@ -35,35 +32,45 @@
         printf("7");<br>
         printf("8");<br>
         printf("9");<br>
+        Saída: 123456789
     </code>
-    <div class="Text">Está claro que perderíamos muito tempo e linhas repetindo os comandos, desse modo, 
+    <div class="Text">Está claro que perderíamos muito tempo e linhas repetindo os comandos, deixando 
+        nosso código maior e pouco intuitivo, e, desse modo, 
     podemos utilizar uma estrutura de repetição para simplificar nossos códigos. Nesta seção, abordaremos as duas 
     principais, <code>while</code> e <code>for</code>.
     </div>
-    <div class="Topic">Comando while</div>
-    <div class="Text">A estrutura while é executada sob uma condição, e enquanto ela não for atendida o código
+    <div class="Topic">Comando "while"</div>
+    <div class="Text">
+        Semelhante ao nosso <code>if</code>, a estrutura while é executada sob uma condição, e enquanto ela 
+         for atendida (ou seja, for verdadeira) o código
     continuará executando o laço de repetição.
     </div>
     <code>int x = 0;<br>
         while(x < 10){ #Condição<br> 
-            printf("\n%d", x);<br>
-            x++; #Soma um valor a x a cada vez que o laço é executado, equivale a x = x + 1<br> 
+            printf("%d", x);<br>
+            x = x + 1; //Soma um valor a x a cada vez que o laço é executado, equivale a x = x + 1<br> 
         }<br><br>
         Saída:<br>
-               <br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>
+        0123456789
     </code>
-    <div class="Topic">Comando for</div>
-    <div class="Text">Diferente do <code>while</code>, no <code>for</code> é possível adicionar
-    mais condições e podemos criar uma variável temporária, da seguinte forma:
+    <div class="Topic">Comando "for"</div>
+    <div class="Text">Diferente do <code>while</code>, no <code>for</code> possuímos uma 
+        variável de controle, ou seja, uma variável que controla a execução do <code>for</code>. 
+        Essa variável é sujeita à uma condição, assim como no <code>while</code>, e de um acréscimo. Vejamos um exemplo:
     </div>
-    <code>for(int i = 0; i < 10; i++){<br>
+    <code>for(int i = 0; i < 10; i = i + 1){<br>
         printf("%d", i);<br>
         }<br><br>
         Saída:<br>
-                <br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>
+        0123456789
     </code>
+    <div class="Text">A variável <code>i</code> é a nossa variável de controle, e, enquanto ela for menor que 10 (nossa condição)
+    a linha de comando dentro das chaves será rodada, e, a cada execução, seu valor aumentará em uma unidade.</div>
     </div>
     </div>
+    <div class="end">
+        <a href="conds.html" >&lt;&lt;Ant.</a>
+        <a href="vectors.html" >Próx.&gt;&gt;</a></div>
     </div>
 </body>
 </html>
